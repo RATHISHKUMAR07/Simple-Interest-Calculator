@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Web App - Simple interest calculator</title>
+    </head>
+    <body onload="completePage()">
+    	
+        
+
+        <div class="maindiv">
+        <h1>Simple Interest Calculator</h1>
+
+       <b>AMOUNT&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<input type="number"  id="principal">  <br/><br>
+  INTEREST RATE &nbsp;<input type="range" min="1" max="20" step="0.25" value="10.25" id="rate" onchange=refreshSlider()>  
+        <span id="rateLabel">10.25%</span><br/><br>
+        NO. OF YEARS&nbsp;&nbsp; &nbsp; <select id="years"></select> <br/>
+        <span id="result"></span><br>
+
+        <button onclick="compute()">Compute Interest</button>
+        <span id="results"></span><br><br>
+        <footer>&copy; Everyone Can Get Rich<br>&nbsp; &nbsp;This Calculator belongs to Rathish Kumar M </footer></b>
+        </div>
+    </body>
+</html>
